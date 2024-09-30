@@ -1,6 +1,7 @@
 # AR Project - Children's Book
 
-![Project Logo](https://github.com/username/repo-name/raw/main/example.png)
+![SC](https://github.com/user-attachments/assets/6c910e58-bc82-442f-a013-b081c489c4d2)
+
 
 ## Getting Started
 
