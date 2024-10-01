@@ -3,7 +3,97 @@ guid: ee22a16dd4ea1d747be85a8409224062
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 6.001
+    second: {fileID: 2100000, guid: 82447b397504e1c4b8712a492aae67ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BS.001
+    second: {fileID: 2100000, guid: 9d4ed25aa9e90744cab4f52abb6bb688, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base.002
+    second: {fileID: 2100000, guid: 57dd5f53470830e48a48759738bac9d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black.001
+    second: {fileID: 2100000, guid: beec505bedd8d2b4280b60d6d735e26c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Book 1.001
+    second: {fileID: 2100000, guid: 0f1a5b9da7c1a324694722cfc73f5fcb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Book 2.001
+    second: {fileID: 2100000, guid: 744e9aefefaadbb4b971b1946352a61c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Box.001
+    second: {fileID: 2100000, guid: 65a5206db27ae704ebcafca3dd990e16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ICING.001
+    second: {fileID: 2100000, guid: e9b4765bff2b74f4c972d5f9be520740, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 58f4810588a4b8f4f9f027f2178e6a04, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ribbon.001
+    second: {fileID: 2100000, guid: 447f8e389d630c444b7f8d11f306f921, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balloon 1.001
+    second: {fileID: 2100000, guid: 01ebc553e9291764687966f208d5715d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balloon 2.001
+    second: {fileID: 2100000, guid: 9151950017630e248833c0402ab58a85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balloon3.001
+    second: {fileID: 2100000, guid: be7d2075cbc90de499878e45ada9c2ee, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair wood.001
+    second: {fileID: 2100000, guid: 74ca9e29cac573e41abea8239689ca45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ribbong 2.001
+    second: {fileID: 2100000, guid: 286ad72f4564f8147b98d3cabe40370e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: string.001
+    second: {fileID: 2100000, guid: f212f8d9c094b324dbc0a6f4510891b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toppings.001
+    second: {fileID: 2100000, guid: e3d5e99af01836349b83e24c301c5b1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood.001
+    second: {fileID: 2100000, guid: 185c45392740ffb4bb979df88991d66d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -47,7 +137,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
