@@ -228,6 +228,7 @@ GameObject:
   - component: {fileID: 1091851799}
   - component: {fileID: 1091851798}
   - component: {fileID: 1091851797}
+  - component: {fileID: 1091851800}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SerializedLibrary: {fileID: 11400000, guid: c7f0c17831ce4024c9f784f4940512f4, type: 2}
   m_MaxNumberOfMovingImages: 1
-  m_TrackedImagePrefab: {fileID: 4526786169926407572, guid: 38aefe497c49b6a428597db9a7a23daa, type: 3}
+  m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &1091851798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,6 +280,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1091851800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091851795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f49db88dd2fe503469fd9f87d8930fed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArPrefabs:
+  - {fileID: 930285044986524213, guid: b5bb70aedf5d6d4478803ae974b2a5b8, type: 3}
 --- !u!1 &1441844477
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,7 +587,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 930285044986524213, guid: b5bb70aedf5d6d4478803ae974b2a5b8, type: 3}
       propertyPath: m_Name
-      value: Page 1 - Book (1)
+      value: Page 1 - Book
       objectReference: {fileID: 0}
     - target: {fileID: 930285044986524213, guid: b5bb70aedf5d6d4478803ae974b2a5b8, type: 3}
       propertyPath: m_StaticEditorFlags
