@@ -1,17 +1,13 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
-public class ImageTracking : MonoBehaviour
+public class ImageTracker : MonoBehaviour
 {
     private ARTrackedImageManager trackedImages;
-    public GameObject[] ArPrefabs;
-
-    List<GameObject> ARObjects = new List<GameObject>();
-
+    public GameObject[] arPrefabs; // Use camelCase for public variables by convention
+    private List<GameObject> arObjects = new List<GameObject>();
 
     void Awake()
     {
@@ -28,34 +24,33 @@ public class ImageTracking : MonoBehaviour
         trackedImages.trackedImagesChanged -= OnTrackedImagesChanged;
     }
 
-
     // Event Handler
     private void OnTrackedImagesChanged(ARTrackedImagesChangedEventArgs eventArgs)
     {
-        //Create object based on image tracked
+        // Create object based on image tracked
         foreach (var trackedImage in eventArgs.added)
         {
-            foreach (var arPrefab in ArPrefabs)
+            foreach (var arPrefab in arPrefabs)
             {
                 if (trackedImage.referenceImage.name == arPrefab.name)
                 {
                     var newPrefab = Instantiate(arPrefab, trackedImage.transform);
-                    ARObjects.Add(newPrefab);
+                    arObjects.Add(newPrefab);
+                    break; // Exit the loop once you find a match
                 }
             }
         }
 
-        //Update tracking position
+        // Update tracking position and state
         foreach (var trackedImage in eventArgs.updated)
         {
-            foreach (var gameObject in ARObjects)
+            for (int i = 0; i < arObjects.Count; i++)
             {
-                if (gameObject.name == trackedImage.name)
+                if (arObjects[i].name == trackedImage.referenceImage.name) // Change trackedImage.name to trackedImage.referenceImage.name
                 {
-                    gameObject.SetActive(trackedImage.trackingState == TrackingState.Tracking);
+                    arObjects[i].SetActive(trackedImage.trackingState == TrackingState.Tracking);
                 }
             }
         }
-
     }
 }
